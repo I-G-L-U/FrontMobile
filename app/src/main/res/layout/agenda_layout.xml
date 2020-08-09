@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:orientation="vertical"
+    tools:context=".Agenda">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_agenda"
+        android:padding="28dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/idreserva1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reserva do salão:"
+            android:textSize="35sp"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/iddata1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data"
+            android:padding="10dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/idhora1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horário"
+            android:padding="10dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/idid1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:padding="10dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botao"
+            android:text="Reservar"
+            android:textColor="#fff"
+            android:layout_margin="30dp"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
